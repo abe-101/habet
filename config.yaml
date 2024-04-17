@@ -302,36 +302,41 @@ params:
     enable: true
     # title: "Custom Name"
     items:
-      - title: Hugo Profile
-        content: A highly customizable and mobile first Hugo template for personal portfolio and blog.
-        image: /images/projects/profile.png
+      - title: MergeCal
+        content:  a Django webapp that allows you to merge multiple iCalendar feeds into a single feed. 
+        image: /images/projects/mergecal.png
         featured:
           name: Demo
-          link: https://hugo-profile.netlify.app
+          link: https://mergecal.habet.dev/
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
-        links:
-          - icon: fa fa-envelope
-            url: mailto:?subject=Hugo%20Profile%20Template&body=Check%20it%20out:%20https%3a%2f%2fhugo-profile.netlify.app%2fblog%2fmarkdown-syntax%2f
-          - icon: fab fa-github
-            url: https://github.com/gurusabarish/hugo-profile
-          - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fgurusabarish%2Fhugo-profile
-
-      - title: Image Converter
-        content: A web app to convert image to pdf, png to jpg, png to jpg and png to webp without database using django.
-        image: /images/projects/converter.jpg
-        featured:
-          name: Demo
-          link: https://django-converter.herokuapp.com
-        badges:
+          - "Python"
           - "Django"
           - "Bootstrap"
+          - "HTMX"
+        links:
+          - icon: fa fa-envelope
+            url: mailto:mergecal@habet.dev?subject=Feedback%20on%20mergecal
+          - icon: fab fa-github
+            url: https://github.com/abe-101/mergecal
+          - icon: fab fa-twitter
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fabe-101%2Fmergecal
+
+      - title: My Hebrew Dates
+        content: 📅 MyHebrewDates makes it easy to get reminded about Hebrew events like birthdays or anniversaries! 🎉🎂🎈
+        image: /images/projects/myhebrewdates.jpeg
+        featured:
+          name: Demo
+          link: https://myhebrewdates.com/
+        badges:
+          - "python"
+          - "Django"
+          - "Bootstrap"
+          - "HTMX"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/converter
+            url: https://github.com/abe-101/myhebrewdates
+          - icon: fa fa-envelope
+            url: mailto:feedback@myhebrewdates.com?subject=Feedback%20on%20MyHebrewDates
 
       - title: Hugo Profile V2
         content: A clean and simple Hugo template for personal portfolio and blog.
