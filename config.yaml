@@ -153,9 +153,7 @@ params:
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I am a software developer with a passion for web development. I have a background in computer science and mathematics, and I have a strong interest in the intersection of technology and art. I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. 
-
-      I am currently working on a project that will be used to help people find the best way to get around the city.
+      I’m a software developer who is skilled at solving problems and finding or creating the best technical solutions. Self-taught and self-driven, I am always looking for ways to improve processes and efficiency. In my previous roles, I have demonstrated resourcefulness, creativity, and the ability to work well on cross-functional teams.
     skills:
       enable: true
       title: "Here are a few technologies I've been working with recently:"
@@ -325,7 +323,7 @@ params:
         content: 📅 MyHebrewDates makes it easy to get reminded about Hebrew events like birthdays or anniversaries! 🎉🎂🎈
         image: /images/projects/myhebrewdates.jpeg
         featured:
-          name: Demo
+          name: Website
           link: https://myhebrewdates.com/
         badges:
           - "python"
@@ -338,19 +336,18 @@ params:
           - icon: fa fa-envelope
             url: mailto:feedback@myhebrewdates.com?subject=Feedback%20on%20MyHebrewDates
 
-      - title: Hugo Profile V2
-        content: A clean and simple Hugo template for personal portfolio and blog.
-        image: /images/projects/profile2.jpg
+      - title: LeetCode-Bot Discord Application 🤖
+        content: A discord bot that provides solutions to LeetCode problems in multiple languages
+        image: /images/projects/leetcode-bot.png
         featured:
-          name: Demo V2
-          link: https://hugo-profile-2.netlify.app
+          name: Server Invite
+          link: https://discord.com/oauth2/authorize?client_id=1052787378718253106&scope=bot+applications.commands&permissions=0
         badges:
-          - "Hugo"
-          - "Bootstrap"
-          - "Javascript"
+          - "Python"
+          - "Discord.py"
         links:
           - icon: fab fa-github
-            url: https://github.com/gurusabarish/HugoProfileV2
+            url: https://github.com/abe-101/leetcode-bot
 
   #Contact
   contact:
