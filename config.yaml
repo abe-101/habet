@@ -330,7 +330,7 @@ params:
             url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fabe-101%2Fmergecal
 
       - title: My Hebrew Dates
-        content: 📅 MyHebrewDates makes it easy to get reminded about Hebrew events like birthdays or anniversaries! 🎉🎂🎈
+        content: MyHebrewDates is a solution to get reminded about recurring Hebrew calendar based events like birthdays or anniversaries!
         image: /images/projects/myhebrewdates.jpeg
         featured:
           name: Website
@@ -347,7 +347,7 @@ params:
             url: mailto:feedback@myhebrewdates.com?subject=Feedback%20on%20MyHebrewDates
 
       - title: LeetCode-Bot Discord Application 🤖
-        content: A discord bot that provides solutions to LeetCode problems in multiple languages
+        content: A discord bot that provides solutions to LeetCode problems in multiple programing languages
         image: /images/projects/leetcode-bot.png
         featured:
           name: Server Invite
@@ -355,6 +355,7 @@ params:
         badges:
           - "Python"
           - "Discord.py"
+          - "Railway.app"
         links:
           - icon: fab fa-github
             url: https://github.com/abe-101/leetcode-bot
