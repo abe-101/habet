@@ -15,15 +15,26 @@ images:
 ---
 
 
-If you followed [this](https://habet.dev/blogs/raspberry-pi-encrypted-boot-with-ssh/) you now have a server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
+If you followed
+[this](https://habet.dev/blogs/raspberry-pi-encrypted-boot-with-ssh/) you now
+have a server. It's now time to start utilizing it. In this guide we will be
+setting up Nextcloud.
 
-Nextcloud is a free (Open Source) Dropbox-like software. The project is written in PHP and JavaScript. It supports many database systems such as MySQL/MariaDB, PostgreSQL, Oracle Database and SQLite.
+Nextcloud is a free (Open Source) Dropbox-like software. The project is written
+in PHP and JavaScript. It supports many database systems such as MySQL/MariaDB,
+PostgreSQL, Oracle Database and SQLite.
 
-To allow Synchronization between server, desktop and mobile phone, Nextcloud provides applications for Windows, Linux and Mac desktop. As well as a mobile app for Android and iOS.
+To allow Synchronization between server, desktop and mobile phone, Nextcloud
+provides applications for Windows, Linux and Mac desktop. As well as a mobile
+app for Android and iOS.
 
-Nextcloud is not just a Dropbox clone. It provides additional features like Calendar, Contacts, Scheduled tasks and web forms.
+Nextcloud is not just a Dropbox clone. It provides additional features like
+Calendar, Contacts, Scheduled tasks and web forms.
 
-In this tutorial, we will show you how to install and configure the latest Nextcloud release (at the time of writing it's version 23) on a Debian 11 server. We will run Nextcloud with an Nginx web server and PHP7.4-FPM and use MariaDB server as the database system.
+In this tutorial, we will show you how to install and configure the latest
+Nextcloud release (at the time of writing it's version 23) on a Debian 11
+server. We will run Nextcloud with an Nginx web server and PHP7.4-FPM and use
+MariaDB server as the database system.
 
 This tutorial has been tested using Debian 11.
 
@@ -45,14 +56,16 @@ This tutorial has been tested using Debian 11.
 
 ## 1\. Install Nginx Web-server
 
-Log in to the server and update the repository, then install the Nginx web server using the apt command as shown below.
+Log in to the server and update the repository, then install the Nginx web
+server using the apt command as shown below.
 
 ```
 sudo apt update && sudo apt upgrade -y
 sudo apt install nginx -y
 ```
 
-After the installation is complete, start the Nginx service and enable the service to launch every time at system boot using systemctl.
+After the installation is complete, start the Nginx service and enable the
+service to launch every time at system boot using systemctl.
 
 ```
 sudo systemctl start nginx
@@ -95,7 +108,8 @@ sudo apt install php7.4 php7.4-fpm php7.4-common php7.4-pgsql php7.4-cli php7.4-
 sudo apt install php-fpm php-curl php-cli php-mysql php-gd php-common php-xml php-json php-intl php-pear php-imagick php-dev php-common php-mbstring php-zip php-soap php-bz2 -y
 ```
 
-After the installation is complete, we will configure the php.ini files for php-fpm and php-cli.
+After the installation is complete, we will configure the php.ini files for
+php-fpm and php-cli.
 
 ```
 sudoedit /etc/php/7.4/fpm/php.ini
@@ -128,20 +142,24 @@ sudo systemctl enable php7.4-fpm
 
 ## 3\. Install and Configure MariaDB
 
-In this step, we will install the latest MariaDB version and create a new database for the Nextcloud installation. The latest version MariaDB packages are available on the repository by default.
+In this step, we will install the latest MariaDB version and create a new
+database for the Nextcloud installation. The latest version MariaDB packages
+are available on the repository by default.
 
 ```
 sudo apt install mariadb-server -y
 ```
 
-After the installation is complete, start the MariaDB service and enable it to launch every time at system boot.
+After the installation is complete, start the MariaDB service and enable it to
+launch every time at system boot.
 
 ```
 sudo systemctl start mariadb
 sudo systemctl enable mariadb
 ```
 
-Next, we will configure the MariaDB root password using the ‘mysql\_secure\_installation’ command.
+Next, we will configure the MariaDB root password using the
+‘mysql\_secure\_installation’ command.
 
 Run the following command:
 
@@ -149,7 +167,8 @@ Run the following command:
 sudo mysql_secure_installation
 ```
 
-You will be asked for some configuration of MariaDB Server. Type the new root password for MariaDB Server.
+You will be asked for some configuration of MariaDB Server. Type the new root
+password for MariaDB Server.
 
 ```
 Enter current password for root (enter for none): Press Enter
@@ -160,7 +179,9 @@ Remove test database and access to it? [Y/n] Y
 Reload privilege tables now? [Y/n] Y
 ```
 
-Next, we will create a new database for nextcloud installation. We will create a new database named ‘nextcloud_db’ with the user ‘nextclouduser’ and password ‘Nextclouduser421@’.
+Next, we will create a new database for nextcloud installation. We will create
+a new database named ‘nextcloud_db’ with the user ‘nextclouduser’ and password
+‘Nextclouduser421@’.
 
 Login to the MySQL shell as a root user with mysql command.
 
@@ -191,16 +212,22 @@ sudo apt install certbot -y
 
 Next we will generate the SSL certificate for our domain name “cloud.example.com”:
 
-If you followed [this](https://habet.dev/blog/self-hosting-and-securing-web-services-out-of-your-home-with-cloudflare-tunnel/#4-create-a-configuration-file) giude to set up a Cloudeflare tunnel you will need to add an additional service for this domain.
+If you followed
+[this](https://habet.dev/blog/self-hosting-and-securing-web-services-out-of-your-home-with-cloudflare-tunnel/#4-create-a-configuration-file)
+giude to set up a Cloudeflare tunnel you will need to add an additional service
+for this domain.
 
 
 ```
 certbot --standalone -d cloud.example.com
 ```
 
-You will be asked for the email address, and it’s used for the renew notification. For the Letsencrypt TOS agreement, type ‘A’ to agree and for the share email address, you can type ‘N’ for No.
+You will be asked for the email address, and it’s used for the renew
+notification. For the Letsencrypt TOS agreement, type ‘A’ to agree and for the
+share email address, you can type ‘N’ for No.
 
-The SSL certificates Letsencrypt for the Nextcloud domain name has been generated, all located at the ‘/etc/letsencrypt/live/your-domain’ directory.
+The SSL certificates Letsencrypt for the Nextcloud domain name has been
+generated, all located at the ‘/etc/letsencrypt/live/your-domain’ directory.
 
 ## 5\. Download Nextcloud
 
@@ -211,20 +238,25 @@ cd /var/www/
 sudo wget https://download.nextcloud.com/server/releases/nextcloud-23.0.0.zip
 ```
 
-Extract the Nextcloud source code and you will get a new directory ‘netxcloud’, change the ownership of the Nextcloud directory to user ‘www-data’.
+Extract the Nextcloud source code and you will get a new directory ‘netxcloud’,
+change the ownership of the Nextcloud directory to user ‘www-data’.
 
 ```
 sudo unzip nextcloud-23.0.0.zip
 sudo chown -R www-data:www-data /var/www/nextcloud
 ```
 
-As a result, the Nextcloud has been downloaded under the ‘/var/www/nextcloud’ directory, and it will be the web root directory.
+As a result, the Nextcloud has been downloaded under the ‘/var/www/nextcloud’
+directory, and it will be the web root directory.
 
 ## 6\. Configure Nginx Virtual Host for Nextcloud
 
-In this step, we will configure the nginx virtual host for nextcloud. We will configure nextcloud to run under the HTTPS connection and will force the HTTP connection automatically to the secure HTTPS connection.
+In this step, we will configure the nginx virtual host for nextcloud. We will
+configure nextcloud to run under the HTTPS connection and will force the HTTP
+connection automatically to the secure HTTPS connection.
 
-Now go to the ‘/etc/nginx/sites-available’ directory and create a new virtual host file ‘nextcloud’:
+Now go to the ‘/etc/nginx/sites-available’ directory and create a new virtual
+host file ‘nextcloud’:
 
 ```
 cd /etc/nginx/sites-available/
@@ -442,9 +474,12 @@ https://cloud.example.com
 
 ![nextcloud-admin](/images/nextcloud-admin.png)
 
-On the top of the page we need to create an admin user for Nextcloud. Type in a user name and password. On the 'data folder' type the full of the 'data' directory. `/var/www/nextcloud/data`
+On the top of the page we need to create an admin user for Nextcloud. Type in a
+user name and password. On the 'data folder' type the full of the 'data'
+directory. `/var/www/nextcloud/data`
 
-On the bottom of the page you will need to enter the database info from step 3. Then click the 'Finish Setup' button.
+On the bottom of the page you will need to enter the database info from step 3.
+Then click the 'Finish Setup' button.
 
 After the installation is complete, you will get the Nextcloud dashboard.
 
