@@ -1,17 +1,20 @@
 ---
-title: "Use Pre-Commit to Include OpenAPI Schema in Version Control"
-date: 2024-04-17T23:26:54-05:00
+title: "Use Pre Commit To Include OpenAPI Schema In Version Control"
+date: 2024-04-17T17:35:54-05:00
 draft: false
 author: "Abe"
 tags:
     - Django
     - OpenAPI
     - Pre-commit
-description: "Use Pre-Commit to Include OpenAPI Schema in Version Control"
+description: "Use Pre Commit To Include OpenAPI Schema In Version Control"
 image: /images/pre-commit-terminal.png
 images: 
     - /images/pre-commit-terminal.png
+
 ---
+
+
 
 ## The Problem
 
