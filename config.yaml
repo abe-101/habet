@@ -72,7 +72,8 @@ params:
   mathjax: false
 
   # og image
-  images: "/images/me.png"
+  images: 
+    - /images/site-featured-image.png
 
   # Whether the fade animations on the home page will be enabled
   animate: true
