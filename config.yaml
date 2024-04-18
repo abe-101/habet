@@ -71,6 +71,9 @@ params:
   # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
   mathjax: false
 
+  # og image
+  images: "/images/me.png"
+
   # Whether the fade animations on the home page will be enabled
   animate: true
 

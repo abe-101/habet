@@ -9,6 +9,8 @@ tags:
     - Cloudflare
 description: "Self Host Without the risk"
 image: /images/cf-logo.jpg
+images:
+    - /images/cf-logo.jpg
 github: https://github.com/abe-101/hugo-profile/blob/my-site/website/content/blog/self-hosting-and-securing-web-services-out-of-your-home-with-cloudflare-tunnel.md
 aliases: 
     - /self-hosting-and-securing-web-services-out-of-your-home-with-argo-tunnel/

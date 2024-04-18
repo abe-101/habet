@@ -8,6 +8,8 @@ tags:
     - Raspberry-Pi
 description: "Self hosted home server"
 image: /images/pi-with-ssd.jpg
+images: 
+    - /images/pi-with-ssd.jpg
 aliases: 
     - /self-host/
     - /2021/12/self-host/

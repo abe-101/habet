@@ -9,6 +9,8 @@ tags:
     - Nextcloud
 description: "Nextcloud: integrated on-premises content collaboration platform"
 image: /images/nextcloud-dashboard.png
+images: 
+    - /images/nextcloud-dashboard.png
 
 ---
 

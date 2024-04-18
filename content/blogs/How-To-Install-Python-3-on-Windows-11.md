@@ -9,6 +9,8 @@ tags:
     - Windows 11
 description: "How To Install Python 3 on Windows 11"
 image: /images/install-tube-cast.png
+images: 
+    - /images/install-tube-cast.png
 
 ---
 This article will walk through the steps to install python3 on Windows 11
