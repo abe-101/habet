@@ -13,7 +13,7 @@ image: /images/nextcloud-dashboard.png
 ---
 
 
-If you followed [this](https://habet.dev/blog/raspberry-pi-encrypted-boot-with-ssh/) you now have a server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
+If you followed [this](https://habet.dev/blogs/raspberry-pi-encrypted-boot-with-ssh/) you now have a server. It's now time to start utilizing it. In this guide we will be setting up Nextcloud.
 
 Nextcloud is a free (Open Source) Dropbox-like software. The project is written in PHP and JavaScript. It supports many database systems such as MySQL/MariaDB, PostgreSQL, Oracle Database and SQLite.
 

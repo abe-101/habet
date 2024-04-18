@@ -1,7 +1,7 @@
 ---
 title: "Raspberry Pi Encrypted Boot With Ssh"
 date: 2021-12-23T00:39:34-05:00
-draft: true
+draft: false
 author: "Abe"
 tags:
     - Self-Hosted
