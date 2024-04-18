@@ -29,11 +29,11 @@ Menus:
       title: Blog posts
       url: /blogs
       weight: 1
-    - identifier: gallery
-      name: Gallery
-      title: Blog posts
-      url: /gallery
-      weight: 2
+      #- identifier: gallery
+      #  name: Gallery
+      #  title: Blog posts
+      #  url: /gallery
+      #  weight: 2
     #Dropdown menu
     # - identifier: dropdown
     #   title: Example dropdown menu
@@ -132,7 +132,7 @@ params:
       enable: true
     # roundImage: true # Make hero image circular | default false
     button:
-      enable: true
+      enable: false
       name: "Resume"
       url: "#"
       download: true
@@ -141,11 +141,21 @@ params:
       fontAwesomeIcons:
         - icon: fab fa-github
           url: https://github.com/abe-101
+        - icon: fab fa-mastodon
+          url: https://fosstodon.org/@abe
         - icon: fab fa-x-twitter
           url: https://twitter.com/abe__101
-      customIcons:
-        - icon: /fav.png
-          url: "https://habet.dev"
+        - icon: fab fa-linkedin
+          url: https://linkedin.com/in/abe101
+        - icon: fab fa-reddit
+          url: https://reddit.com/user/abe-101
+        - icon: fab fa-hacker-news
+          url: https://news.ycombinator.com/user?id=abe-101
+        - icon: fa fa-rss
+          url: /index.xml
+          #customIcons:
+          #  - icon: /fav.png
+          #    url: "https://habet.dev"
 
   # About
   about:
@@ -401,5 +411,6 @@ params:
     articleList: "Jan 2, 2006"
     articleRecent: "Jan 2, 2006"
 
-  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  customscripts: |
+    <script data-name="BMC-Widget" data-cfasync="false" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="abe101" data-description="Support me on Buy me a coffee!" data-message="" data-color="#FF813F" data-position="Right" data-x_margin="18" data-y_margin="18"></script>
   #  <script type="text/javascript"><!-- any script here --></script>
