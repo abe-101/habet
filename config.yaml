@@ -196,16 +196,26 @@ params:
          - Implemented automated calculations supporting tiered structures and dynamic splitting
   
      - job: "Software Developer"
-       company: "One8.io"
+       company: "Podpage"
+       date: "July 2024 - Aug 2024"
+       content: |
+         Optimized performance of podcast platform serving 3000+ websites.
+         - Achieved 6x reduction in load on public podcast pages
+         - Enhanced Django backend data fetching processes
+         - Improved efficiency across platform
+
+     - job: "Software Developer"
+       company: "One8 Parking"
        companyUrl: "https://one8.io"
        date: "Jan 2024 - Sept 2024"
        content: |
-         Led development of a multi-rate parking lot payment and validation system.
-         - Implemented flexible-rate system allowing custom pricing configurations
-         - Integrated Stripe Connect for automated payouts and financial transactions
-         - Built analytics dashboard providing insights into lot performance
-         - Created OpenAPI schema with Swagger documentation
-         - Optimized performance using Cloudfront for static assets
+         Created and maintain a comprehensive parking payment platform processing $500K+ in transactions across 30+ US parking lots.
+         - Engineered flexible rate engine supporting time-based pricing, dynamic validation rules, and custom schedules for events
+         - Implemented merchant validation system with configurable time restrictions and custom discount rules
+         - Integrated Stripe Connect for automated revenue distribution and real-time financial reconciliation
+         - Built analytics dashboard tracking real-time transactions, revenue metrics, and validation usage
+         - Created OpenAPI schema with Swagger documentation for third-party integrations
+         - Optimized platform performance through CDN integration and caching strategies
   
      - job: "Software Developer"
        company: "Paid Keeper Inc"
@@ -228,15 +238,6 @@ params:
          - Built cost optimization system for shipping options
          - Implemented with Python, Flask and HTMX
   
-     - job: "Software Developer"
-       company: "Podpage"
-       date: "July 2024 - Aug 2024"
-       content: |
-         Optimized performance of podcast platform serving 3000+ websites.
-         - Achieved 6x reduction in load on public podcast pages
-         - Enhanced Django backend data fetching processes
-         - Improved efficiency across platform
-
   # Education
   education:
     enable: false
