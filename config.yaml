@@ -127,11 +127,11 @@ params:
   # Hero
   hero:
     enable: true
-    intro: "Hi, my name is"
+    intro: "Hi, I'm"
     title: "Abe Hanoka."
-    subtitle: "I build things for the web"
-    content: "A passionate web app developer. I tend to make use of modern web technologies to build websites that looks great, feels fantastic, and functions correctly."
-    image: /images/hero.svg
+    subtitle: "I automate your success"
+    content: "A Django specialist focused on developing scalable business applications. I create efficient, reliable software that streamlines operations and drives business growth through modern web technologies."
+    image: /images/profile.png
     bottomImage:
       enable: true
     # roundImage: true # Make hero image circular | default false
@@ -162,87 +162,80 @@ params:
           #    url: "https://habet.dev"
 
   # About
+  # About
   about:
     enable: true
     title: "About Me"
     image: "/images/me.png"
     content: |-
-      I’m a software developer who is skilled at solving problems and finding or creating the best technical solutions. Self-taught and self-driven, I am always looking for ways to improve processes and efficiency. In my previous roles, I have demonstrated resourcefulness, creativity, and the ability to work well on cross-functional teams.
+      I specialize in building custom Django applications that solve complex business challenges. With a focus on payment systems and calendar integrations, I've helped companies streamline operations and increase revenue through thoughtful software solutions. From merging complex calendar feeds to automating payment workflows, I transform manual processes into efficient digital systems that drive business growth.
     skills:
       enable: true
-      title: "Here are a few technologies I've been working with recently:"
+      title: "Core technologies I work with:"
       items:
-        - "HTML"
-        - "CSS"
-        - "JavaScript"
+        - "Django / DRF"
         - "Python"
-        - "Django"
+        - "PostgreSQL"
         - "HTMX"
+        - "Stripe"
+        - "Docker"
 
   # Experience
   experience:
-    enable: false
-    # title: "Custom Name"
-    items:
-      - job: "Senior Software Developer"
-        company: "Facebook"
-        companyUrl: "https://example.com"
-        date: "Jan 2022 - present"
-        featuredLink:
-          enable: true
-          name: "View the project"
-          url: "https://example.com"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
-
-      - job: "Software Developer"
-        company: "Amazon"
-        companyUrl: "https://example.com"
-        date: "Sep 2020 - Dec 2021"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        info:
-          enable: true
-          content: I worked as a software developer for more than one year in Amazon.
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Junior Software Developer"
-        company: "Apple"
-        companyUrl: "https://example.com"
-        date: "Jan 2020 - Aug 2020"
-        info:
-          enable: false
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "UI/UX Designer"
-        company: "Netflix"
-        companyUrl: "https://example.com"
-        date: "June 2017 - Nov 2019"
-        featuredLink:
-          enable: true
-          url: "https://example.com"
-        content: |
-          I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city.
-
-          - Lead backend developer for a product.
-          - Created a frontend design for a product.
-
-      - job: "Product Designer"
-        company: "Google"
-        companyUrl: "https://example.com"
-        date: "Feb 2016 - Mar 2017"
-        content: "I am currently working as a software developer at [example org.](https://example.com) in San Francisco, CA. I am currently working on a project that will be used to help people find the best way to get around the city."
+   enable: true
+   items:
+     - job: "Software Engineer"
+       company: "Vanguard Parking Solutions"
+       companyUrl: "https://vanguardparking.co"
+       date: "Oct 2024 - present"
+       content: |
+         Lead developer of a mission-critical financial distribution platform that automates complex revenue sharing agreements and payment reconciliation.
+         - Architected Django-based commission calculation engine handling multi-party revenue sharing
+         - Built robust payment tracking system managing disbursements across stakeholders
+         - Developed real-time analytics dashboards for commission monitoring
+         - Implemented automated calculations supporting tiered structures and dynamic splitting
+  
+     - job: "Software Developer"
+       company: "One8.io"
+       companyUrl: "https://one8.io"
+       date: "Jan 2024 - Sept 2024"
+       content: |
+         Led development of a multi-rate parking lot payment and validation system.
+         - Implemented flexible-rate system allowing custom pricing configurations
+         - Integrated Stripe Connect for automated payouts and financial transactions
+         - Built analytics dashboard providing insights into lot performance
+         - Created OpenAPI schema with Swagger documentation
+         - Optimized performance using Cloudfront for static assets
+  
+     - job: "Software Developer"
+       company: "Paid Keeper Inc"
+       date: "Jan 2023 - Aug 2023"
+       content: |
+         Built systems for worker management and automated payments.
+         - Developed coordinator dashboard for scheduling and issue management
+         - Created paycheck splitting system with bank account integration
+         - Implemented real-time monitoring with Slack alerts
+         - Built resilient data import system with automated backfilling
+  
+     - job: "Software Developer"
+       company: "Swiss Madison"
+       companyUrl: "https://swissmadison.com"
+       date: "Aug 2023 - Jan 2024"
+       content: |
+         Created shipping process automation platform.
+         - Integrated with sellercloud and multiple shipping quote APIs
+         - Developed algorithms for automated data validation
+         - Built cost optimization system for shipping options
+         - Implemented with Python, Flask and HTMX
+  
+     - job: "Software Developer"
+       company: "Podpage"
+       date: "July 2024 - Aug 2024"
+       content: |
+         Optimized performance of podcast platform serving 3000+ websites.
+         - Achieved 6x reduction in load on public podcast pages
+         - Enhanced Django backend data fetching processes
+         - Improved efficiency across platform
 
   # Education
   education:
@@ -289,25 +282,23 @@ params:
 
   # Achievements
   achievements:
-    enable: false
+    enable: true
     # title: "Custom Name"
     items:
-      - title: Google kickstart runner
-        content: I solved all problems with optimal solution.
-        url: https://example.com
-        image: /images/achievment.jpg
-      - title: Facebook Hackathon Winner
-        content: Developed a product using Artificial Intelligence.
-        image: /images/achievment.jpg
-      - title: Hugo Profile
-        content: Developed a theme and getting 1K+ downloads per month.
-        url: "https://github.com/gurusabarish/hugo-profile"
-        image: /images/achievment.jpg
-      - title: Microsoft Imagine Runner
-        content: We are developed a product which can help others.
-      - title: Google Summer of Code
-        content: Contributed to a open source project.
-        url: https://example.com
+      - title: "dj-stripe Documentation Overhaul"
+        content: "Led major restructuring of dj-stripe's documentation infrastructure, implementing versioned docs and resolving long-standing navigation issues. Increased developer adoption and reduced support queries."
+        url: "https://dj-stripe.dev"
+        image: "/images/achievement/dj-stripe.svg"
+        
+      - title: "RFC5545 Calendar Library"
+        content: "Created python-mergecal, an open-source library for merging iCalendar feeds, now powering calendar solutions used by thousands of users."
+        url: "https://github.com/mergecal/python-mergecal"
+        image: "/images/achievement/MergeCal.svg"
+
+      - title: "Django HTMX Modal Forms"
+        content: "Created a Django package that simplifies building create/edit forms in Bootstrap modals using HTMX, reducing boilerplate code and speeding up development of model interactions."
+        url: "https://github.com/abe-101/django-htmx-modal-forms"
+        image: "/images/achievement/htmx.svg"
 
   # projects
   projects:
@@ -315,23 +306,38 @@ params:
     # title: "Custom Name"
     items:
       - title: MergeCal
-        content:  a Django webapp that allows you to merge multiple iCalendar feeds into a single feed. 
+        content: "Combine calendars from all major providers into one synchronized calendar. When events change in any of your calendars, your combined calendar automatically stays up to date."
         image: /images/projects/mergecal.png
         featured:
           name: Demo
-          link: https://mergecal.habet.dev/
+          link: https://mergecal.org/
         badges:
           - "Python"
           - "Django"
           - "Bootstrap"
           - "HTMX"
+          - "Stripe"
         links:
           - icon: fa fa-envelope
-            url: mailto:mergecal@habet.dev?subject=Feedback%20on%20mergecal
+            url: mailto:feedback@mergecal.org?subject=Feedback%20on%20mergecal
           - icon: fab fa-github
-            url: https://github.com/abe-101/mergecal
+            url: https://github.com/mergecal/mergecal
           - icon: fab fa-twitter
-            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fabe-101%2Fmergecal
+            url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fmergecal%2Fmergecal
+
+      - title: LeetCode-Bot Discord Application 🤖
+        content: A discord bot that provides solutions to LeetCode problems in multiple programing languages
+        image: /images/projects/leetcode-bot.png
+        featured:
+          name: Server Invite
+          link: https://discord.com/oauth2/authorize?client_id=1052787378718253106&scope=bot+applications.commands&permissions=0
+        badges:
+          - "Python"
+          - "Discord.py"
+          - "Railway.app"
+        links:
+          - icon: fab fa-github
+            url: https://github.com/abe-101/leetcode-bot
 
       - title: My Hebrew Dates
         content: MyHebrewDates is a solution to get reminded about recurring Hebrew calendar based events like birthdays or anniversaries!
@@ -349,20 +355,6 @@ params:
             url: https://github.com/abe-101/myhebrewdates
           - icon: fa fa-envelope
             url: mailto:feedback@myhebrewdates.com?subject=Feedback%20on%20MyHebrewDates
-
-      - title: LeetCode-Bot Discord Application 🤖
-        content: A discord bot that provides solutions to LeetCode problems in multiple programing languages
-        image: /images/projects/leetcode-bot.png
-        featured:
-          name: Server Invite
-          link: https://discord.com/oauth2/authorize?client_id=1052787378718253106&scope=bot+applications.commands&permissions=0
-        badges:
-          - "Python"
-          - "Discord.py"
-          - "Railway.app"
-        links:
-          - icon: fab fa-github
-            url: https://github.com/abe-101/leetcode-bot
 
   #Contact
   contact:

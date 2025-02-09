@@ -13,39 +13,41 @@ toc:
 Hugo ships with several [Built-in Shortcodes](https://gohugo.io/content-management/shortcodes/#use-hugo-s-built-in-shortcodes) for rich content, along with a [Privacy Config](https://gohugo.io/about/hugo-and-gdpr/) and a set of Simple Shortcodes that enable static and no-JS versions of various social media embeds.
 
 ## Gist Simple Shortcode
+
 ```
 {{</* gist spf13 7896402 "img.html" */>}}
 ```
+
 <br>
 {{< gist spf13 7896402 "img.html" >}}
 <br>
 
-
-
 ## Twitter Simple Shortcode
+
 ```
 {{</* tweet 877500564405444608 */>}}
 ```
-<br>
-{{< tweet 877500564405444608 >}}
-<br>
 
-
+<br>
+{{< tweet user="abe__101" id="1879593850660081927" >}}
+<br>
 
 ## Vimeo Simple Shortcode
+
 ```
 {{</* vimeo 146022717 */>}}
 ```
+
 <br>
 {{< vimeo 146022717 >}}
 <br>
 
-
-
 ## Youtube Simple Shortcode
+
 ```
 {{</* youtube w7Ft2ymGmfc */>}}
 ```
+
 <br>
 {{< youtube w7Ft2ymGmfc >}}
 <br>
