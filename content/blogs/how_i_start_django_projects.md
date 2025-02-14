@@ -81,6 +81,9 @@ For logs, I go with Better Stack (Logtail). I set up JSON logs because they're e
 
 ```python
 logger.info("User action", extra={"user_id": user.id, "email": user.email})
+```
+
+```
 
 ## Final Pieces
 
