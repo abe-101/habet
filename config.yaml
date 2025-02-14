@@ -310,7 +310,7 @@ params:
         content: "Combine calendars from all major providers into one synchronized calendar. When events change in any of your calendars, your combined calendar automatically stays up to date."
         image: /images/projects/mergecal.png
         featured:
-          name: Demo
+          name: MergeCal.org
           link: https://mergecal.org/
         badges:
           - "Python"
@@ -327,7 +327,7 @@ params:
             url: https://twitter.com/intent/tweet?text=Check+it+out:&url=https%3A%2F%2Fgithub.com%2Fmergecal%2Fmergecal
 
       - title: LeetCode-Bot Discord Application 🤖
-        content: A discord bot that provides solutions to LeetCode problems in multiple programing languages
+        content: A discord bot that provides solutions to LeetCode problems in multiple programing languages. Active in over 30 Servers.
         image: /images/projects/leetcode-bot.png
         featured:
           name: Server Invite
@@ -344,7 +344,7 @@ params:
         content: MyHebrewDates is a solution to get reminded about recurring Hebrew calendar based events like birthdays or anniversaries!
         image: /images/projects/myhebrewdates.jpeg
         featured:
-          name: Website
+          name: MyHebrewDates.com
           link: https://myhebrewdates.com/
         badges:
           - "python"
