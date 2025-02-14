@@ -83,8 +83,6 @@ For logs, I go with Better Stack (Logtail). I set up JSON logs because they're e
 logger.info("User action", extra={"user_id": user.id, "email": user.email})
 ```
 
-```
-
 ## Final Pieces
 
 Then I wrap up with:
@@ -97,5 +95,3 @@ Then I wrap up with:
 That's my Django setup process. It might look like a lot at first glance, but it's become second nature after doing it a few times. Each piece serves a purpose and has saved me from headaches down the line.
 
 I'm always tweaking things as I learn new tricks, but this setup has been solid for me. How do you set up your Django projects? I'd love to hear what works for others.
-
-I'm always tweaking this process, but this is what's working for me right now. If you have your own way of setting up Django projects, I'd be curious to hear about it.
